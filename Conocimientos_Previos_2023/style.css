@@ -8,7 +8,7 @@
 }
 
 body{
-    background: rgb(13, 3, 58);
+    background: rgb(0, 0, 0);
     color: #ededed;
 }
 
@@ -43,7 +43,7 @@ body{
 
 .nave a:hover,
 .nave a.siempre{
-    color: rgb(12, 134, 172);
+    color: rgb(172, 12, 12);
 }
 
 .inicio{
@@ -57,6 +57,134 @@ body{
 }
 
 .inicio-cont h1{
-    font-size: 50px;
-    font-weight: 800;
+    font-size: 56px;
+    font-weight: 700;
+    line-height: 1.2;
+}
+
+.inicio-cont h3{
+    font-size: 32px;
+    font-weight: 700;
+    color: rgb(172, 12, 12);
+}
+
+.inicio-cont p{
+    font-size: 16px;
+    margin: 20px 0 40px;
+    text-align: justify;
+}
+
+.inicio-cont .boton1{
+    display: flex;
+    justify-content: space-between;
+    width: 345px;
+    height: 50px;
+}
+
+.boton1 a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 150px;
+    height: 100%;
+    background: rgb(172, 12, 12);
+    border: 2px solid rgb(172, 12, 12);
+    border-radius: 8px;
+    font-size: 19px;
+    color: black;
+    text-decoration: none;
+    font-weight: 600;
+    letter-spacing: 1px;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.boton1 a:hover{
+    color: rgb(172, 12, 12);
+}
+
+.boton1 a:nth-child(2) {
+    background: transparent;
+    color: rgb(172, 12, 12);
+}
+
+.boton1 a:nth-child(2):hover{
+    color: black;
+}
+
+.boton1 a:nth-child(2)::before{
+    background: rgb(172, 12, 12);
+}
+
+.boton1 a::before{
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(0, 0, 0);
+    z-index: -1;
+    transition: .3s;
+}
+
+.boton1 a:hover::before {
+    width: 100%;
+}
+
+.redes-sociales{
+    position: absolute;
+    bottom: 40px;
+    width: 100px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.redes-sociales a{
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: transparent;
+    font-size: 30px;
+    color:  rgb(172, 12, 12);
+    text-decoration: none;
+    z-index: 1;
+    overflow: hidden;
+    transition: .5s;
+}
+
+.redes-sociales a:hover{
+    color: black;
+
+}
+
+.redes-sociales a::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0;
+    height: 100%;
+    background: rgb(172, 12, 12);
+    z-index: -1;
+    transition: 0.5s;
+}
+
+.redes-sociales a:hover::before {
+    width: 100%;
+}
+
+.HTML{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 2rem;
+    background: red;
 }
